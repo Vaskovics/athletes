@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 500px;
+  justify-content: center;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.person {
+  width: 220px;
+  height: 287px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.person__photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  padding: 10px 10px 8px;
+}
+.person__details {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #2F4F4F;
+}
+.person__extra {
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  opacity: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
