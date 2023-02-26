@@ -1,10 +1,25 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;
   width: 500px;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 30px;
   margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 880px;
+  }
 }
 
 .person {
@@ -13,7 +28,9 @@
   height: 287px;
   box-sizing: border-box;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
+  transition: transform 1s;
 }
 .person__photo {
   width: 200px;
@@ -32,34 +49,41 @@
   height: 32px;
   border-radius: 32px;
   background-color: #fff;
-  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #8B0000;
 }
 .person__details {
-  font-family: "Arial", sans-serif;
-  font-size: 20px;
   text-align: center;
+}
+.person__name {
+  font-size: 20px;
+  line-height: 23px;
   color: #2F4F4F;
 }
 .person__extra {
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
   color: #000000;
   opacity: 0;
 }
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.person:hover {
+  background-color: #eee;
+  transform: scale(1.2);
+}
+.person:hover .person__photo {
+  border-radius: 60px;
+}
+.person:hover .person__name {
+  font-size: 24px;
+  line-height: 28px;
+}
+.person:hover .person__extra {
+  opacity: 1;
+  font-size: 21px;
+  line-height: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
